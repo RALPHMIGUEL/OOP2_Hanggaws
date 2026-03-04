@@ -86,3 +86,36 @@ class Hacker extends StreetUnit {
         return getAttackPower() + 5;
     }
 }                                                                            //Zafra (3 classes)
+
+abstract class LawEnforcement extends GameCharacter implements WeaponSystem {         //Rabaya(3 classes)
+
+    public LawEnforcement(String name, int health, int attackPower) {
+        super(name, health, attackPower);
+    }
+}
+
+class PatrolOfficer extends LawEnforcement {
+
+    public PatrolOfficer(String name) {
+        super(name, 90, 20);
+    }
+
+    @Override
+    public int attack() {
+        System.out.println(getName() + " fires standard pistol!");
+        return getAttackPower();
+    }
+}
+
+class SwatTeam extends LawEnforcement {
+
+    public SwatTeam(String name) {
+        super(name, 150, 35);
+    }
+
+    @Override
+    public int attack() {
+        System.out.println(getName() + " launches tactical assault!");
+        return getAttackPower() + 20;
+    }
+}    //Rabaya(3 classes)
