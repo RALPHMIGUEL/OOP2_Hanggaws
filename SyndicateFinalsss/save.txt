@@ -1,0 +1,8 @@
+FUNDS:609
+HEAT:18
+CREW:Viktor|Brawler|120
+CREW:Echo|Hacker|70
+CREW:Luna|Driver|90
+INV:Pistol|Firearm
+INV:Burner Phone|BurnerPhone
+INV:Medkit|Medkit
